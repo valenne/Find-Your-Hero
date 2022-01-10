@@ -1,0 +1,331 @@
+/* ==================================== */
+/* ==========SECTION NAV=============== */
+/* ==================================== */
+
+.header {
+  border: 2px solid var(--color-red-main);
+  padding: 2.4rem 0;
+}
+.header__nav {
+  height: min(10rem);
+}
+
+.header__logo {
+  gap: var(--gap-sm);
+  margin-bottom: 1.2rem;
+}
+.header__logo img {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+.header__logo-title {
+  font-size: 3.2rem;
+  color: var(--color-black-main);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-family-comic);
+}
+
+.header__menu-box {
+  gap: 5.2rem;
+  list-style: none;
+}
+.header__menu-box li:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.header__menu-a {
+  color: var(--color-black-main);
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-family: var(--font-family-rubik);
+  font-weight: 500;
+  border-bottom: 2px transparent var(--color-black-main);
+  padding: 0.8rem;
+}
+.header__menu-a.red-a:hover,
+.header__menu-a.red-a:active {
+  border-bottom: 2px solid var(--color-red-main);
+}
+.header__menu-a.blue-a:hover,
+.header__menu-a.blue-a:active {
+  border-bottom: 2px solid var(--color-blue-main);
+}
+.header__menu-a.yellow-a:hover,
+.header__menu-a.yellow-a:active {
+  border-bottom: 2px solid var(--color-yellow-main);
+}
+.header__menu-a.orange-a:hover,
+.header__menu-a.orange-a:active {
+  border-bottom: 2px solid var(--color-orange-main);
+}
+
+/* ==================================== */
+/* ==========SECTION HERO============== */
+/* ==================================== */
+
+.hero {
+  /* height: 100vh; */
+  /* width: 100%; */
+  position: relative;
+  margin-bottom: 12.6rem;
+  font-family: var(--font-family-rubik);
+}
+.hero::before {
+  content: "";
+  background-image: url(../img/hero-section.jpg);
+  filter: blur(2px);
+  position: absolute;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0.8;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.hero__text {
+  color: var(--color-black-main);
+  padding: 12.8rem 0;
+  position: relative;
+  width: 100%;
+  gap: 4.8rem;
+}
+
+.hero__text p {
+  font-size: 7.2rem;
+  width: 40vw;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+}
+.hero__text--color {
+  color: var(--color-red-main);
+}
+
+/* ==================================== */
+/* ==========SECTION HERO============== */
+/* ==================================== */
+.how {
+  padding: 0 0 9.6rem 0;
+}
+.how__main {
+  /* background-color: salmon; */
+  font-family: var(--font-family-rubik);
+}
+.how__title {
+  font-size: 4.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4.8rem;
+  font-family: inherit;
+  color: var(--color-red-main);
+}
+.how__text {
+  width: 70%;
+  margin-inline: auto;
+}
+.how__text p:nth-child(1) {
+  width: 100%;
+  margin-bottom: 4.8rem;
+}
+.how__text h3 {
+  color: var(--color-black-main);
+  font-size: 3.2rem;
+}
+.how__main p {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.how__text ol {
+  font-size: 1.8rem;
+}
+.tarjeta {
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  width: auto;
+}
+.tarjeta:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.05);
+}
+.tarjeta__img {
+  width: 60rem;
+  aspect-ratio: 2/1.5;
+  object-fit: cover;
+  background-size: cover;
+}
+.tarjeta__tag {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  background-color: var(--color-red-main);
+  color: var(--color-white-main);
+  text-align: center;
+}
+.tarjeta__content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.tarjeta__title {
+  margin-bottom: 2.4rem;
+  font-weight: 500;
+}
+.tarjeta__atrs {
+  margin-left: -2rem;
+}
+
+/* ==================================== */
+/* ==========SECTION MEDIA  =========== */
+/* ==================================== */
+
+.media {
+  padding: 4.8rem 0 9.6rem 0;
+}
+.media__title {
+  font-size: 4.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4.8rem;
+  font-family: inherit;
+  color: var(--color-red-main);
+}
+
+.media__box {
+  width: 100%;
+}
+.media__text {
+  font-size: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+.media__img {
+  object-fit: cover;
+  margin-inline: auto;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.05);
+  /* padding: 3.2rem 0; */
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==================================== */
+/* ====SECTION BUSCADOR DE HEROES  ==== */
+/* ==================================== */
+
+.buscador {
+  padding: 4.8rem 0 4.8rem 0;
+}
+.buscador__title {
+  font-size: 4.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4.8rem;
+  font-family: inherit;
+  color: var(--color-red-main);
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+}
+.cta__title {
+  font-size: 2.4rem;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+  font-family: inherit;
+}
+.cta__img {
+  object-fit: cover;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2.4rem;
+}
+
+.cta__text {
+  margin-inline: auto;
+}
+
+.cta__form--inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cta__form--inner label {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.cta__form--inner input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  color: var(--color-black-main);
+  border: 2px solid var(--color-red-main);
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  margin-bottom: 2.4rem;
+}
+.cta__form--inner input::placeholder {
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+/* ==================================== */
+/* ==========SECTION RENDER============ */
+/* ==================================== */
+
+.row > * {
+  padding-left: 0;
+}
+.card {
+  border-radius: 9px;
+  overflow: hidden;
+}
+.render {
+  font-family: var(--font-family-comic);
+  font-weight: 400;
+  padding: 2.4rem 0 4.8rem 0;
+}
+.render__main {
+  display: flex;
+  width: 100%;
+}
+
+.render__info {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+}
+.render__title {
+  font-size: max(1.8rem);
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+  font-family: inherit;
+}
+.render__img {
+  object-fit: cover;
+  width: 25rem;
+  border-radius: 9px;
+}
+.render__text {
+  font-size: 1.6rem;
+}
+
+.render__tag {
+  font-weight: 700;
+}

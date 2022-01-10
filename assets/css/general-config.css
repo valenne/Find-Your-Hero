@@ -1,0 +1,190 @@
+:root {
+  /* font-family */
+  --font-family-rubik: "Rubik", sans-serif;
+  --font-family-comic: "Comic Neue", cursive;
+
+  /* colors */
+  --color-orange-main: #ff6633;
+  --color-blue-main: #279af1;
+  --color-yellow-main: #ffce5c;
+  --color-red-main: #aa160e;
+  --color-black-main: #1d201f;
+  --color-white-main: #fff;
+
+  /*gap*/
+  --gap-sm: 1rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--color-black-main);
+  font-family: var(--font-family-rubik);
+}
+a:hover {
+  color: var(--color-black-main);
+}
+.container--home {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+/* flexbox */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex__column {
+  flex-direction: column;
+}
+
+/* btn */
+
+.boton__link {
+  text-decoration: none;
+  color: var(--color-black-main);
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--font-family-roboto);
+  text-transform: uppercase;
+}
+
+.boton {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.boton {
+  /* width: 150px;
+  height: 50px; */
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 5px;
+  background: #ffc421;
+  border: 2px solid black;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+  transition: 500ms;
+  color: var(--color-black-main);
+}
+
+.boton:after {
+  content: "";
+  position: absolute;
+  transform: translateX(-55px) translateY(-40px);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0px 0px 50px transparent;
+  transition: 500ms;
+}
+
+.boton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  color: var(--color-blue-main);
+}
+
+.boton:focus {
+  outline: none;
+}
+.btn {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  background-color: var(--color-red-main);
+  border-color: var(--color-red-main);
+}
+.btn:hover,
+.btn:active {
+  border-color: var(--color-orange-main);
+}

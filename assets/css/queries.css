@@ -1,0 +1,117 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .container--home {
+    max-width: 100rem;
+    padding-inline: 2.4rem;
+  }
+  .hero__text p {
+    font-size: 6.4rem;
+  }
+
+  .how__title,
+  .media__title,
+  .buscador__title {
+    font-size: 3.2rem;
+  }
+  .how__main p,
+  .media__text {
+    font-size: 1.8rem;
+  }
+  .how__text ol {
+    font-size: 1.6rem;
+  }
+  .tarjeta {
+    width: 60%;
+  }
+  .tarjeta__img {
+    width: 40rem;
+  }
+
+  .render__main {
+    gap: 2rem;
+  }
+  .render__info,
+  #heroStats {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .hero__text p {
+    font-size: 4.8rem;
+  }
+  .header__menu-box li:nth-child(2) {
+    display: none;
+  }
+
+  .media {
+    display: none;
+  }
+  .tarjeta {
+    width: 80%;
+  }
+  .tarjeta__img {
+    width: 60rem;
+  }
+  .how {
+    padding-bottom: 2.4rem;
+  }
+  .how__text {
+    width: 80%;
+  }
+  .media {
+    padding-bottom: 2.4rem;
+  }
+  .cta__img {
+    width: 40rem;
+  }
+  .render__main {
+    gap: 10rem;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .render__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .render__img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 2/1.5;
+    background-size: cover;
+  }
+  #heroStats {
+    width: 100%;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .hero__text p {
+    font-size: 3.2rem;
+  }
+  .boton {
+    padding: 0.6rem 1.2rem;
+  }
+  .boton__link {
+    font-size: 1.2rem;
+  }
+  .cta__img {
+    width: 20rem;
+  }
+  .tarjeta {
+    width: 100%;
+  }
+  .how__title,
+  .media__title,
+  .buscador__title {
+    font-size: 2.4rem;
+  }
+}
